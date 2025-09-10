@@ -10,3 +10,10 @@ Let's use an analogy: Making a pizza. 🍕
 - Step: A single instruction within a job, like "Chop onions" or "Preheat the oven."
 - Action: A pre-made, reusable command that you can plug into a step. Think of it as a specialized kitchen tool. For example, actions/checkout is an official action that "gets your code" from the repository, and actions/setup-node is an action that "installs Node.js."
 - Runner: The server (the "kitchen") where your recipe is executed. GitHub provides runners with different operating systems (Ubuntu, Windows, macOS).
+
+## Restrictions for Private Repositories
+Functionally, GitHub Actions works the same for both public and private repositories. The main difference lies in usage limits and default security settings.
+- Free Tier Minutes: For private repositories on a standard free plan, you get 2,000 CI/CD minutes per month. A simple "Hello World" workflow uses only a few seconds, so you are very unlikely to have hit this limit. You can check your usage under your organization's Settings > Billing and plans.
+- Storage: You also get 500 MB of GitHub Packages storage, which is separate and not relevant to your initial workflow.
+
+In summary, for a private repository, the most likely issue is that Actions are disabled in the settings.
