@@ -1,13 +1,10 @@
-function sum(a, b) {
-    return a+b
-}
+var prompt = require('prompt-sync')({sigint: true})
 
-function mul(a, b) {
-    return a*b
-}
+var mathFns = require('./math-fn')
 
-function sub(a, b) {
-    return a-b
-}
-
-module.exports = {sum, mul, sub}
+const n1 = Number(prompt('Enter N1: '))
+const n2 = Number(prompt('Enter N2: '))
+''
+console.log(`Sum: ${mathFns.sum(n1, n2)}`)
+console.log(`Difference: ${mathFns.sub(n1, n2)}`)
+console.log(`Multiplication: ${mathFns.mul(n1, n2)}`)
