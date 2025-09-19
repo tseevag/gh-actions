@@ -1,7 +1,9 @@
-const {sum, mul} = require('./app.js')
+const {sum, mul, sub} = require('./app.js')
 
 test('properly adds two numbers', () => {
-    expect(sum(2,3)).toBe(5)
+    expect(sum(2, 3)).toBe(5)
 })
 
-test('properly multiplies two numbers', () => expect(mul(2,3)).toBe(6))
+test('properly multiplies two numbers', () => expect(mul(2, 3)).toBe(6))
+
+test('properly subtracts two numbers', () => expect(sub(5, 3)).toBe(2))

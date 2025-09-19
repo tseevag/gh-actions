@@ -6,4 +6,8 @@ function mul(a, b) {
     return a*b
 }
 
-module.exports = {sum, mul}
+function sub(a, b) {
+    return a-b
+}
+
+module.exports = {sum, mul, sub}
