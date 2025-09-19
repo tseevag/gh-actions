@@ -13,7 +13,7 @@ describe('Sum function', () => {
         [1, 2, 3],
         [4, -5, -1],
         [-4, -9, -13],
-        [0, 1, 1]
+        [0, 1, 10]
     ])('add(%i, %i) should return %i', (a, b, expected) => {
         expect(sum(a, b)).toBe(expected)
     })

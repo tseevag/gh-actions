@@ -1,8 +1,8 @@
 name: Learn Github Actions
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   
 jobs:
   say-hello:
